@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+
+  <title>
+    Build your Consulting Week
+  </title>
+
+   <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+  <header>
+
+    <div class="header-row">
+
+      <div class="brand">
+
+        <h1>
+          Build your Consulting Week
+        </h1>
+
+        <p class="task">
+          Design a realistic consulting week with activity-specific durations and 30-minute scheduling precision.
+        </p>
+
+      </div>
+
+      <div class="header-menu">
+
+        <div class="eyebrow">
+          BMC Internal · Interactive Consulting Simulation
+        </div>
+
+        <nav aria-label="Application actions" class="toolbar">
+
+          <button class="btn primary" id="evaluate">
+            Evaluate Week
+          </button>
+
+          <button class="btn" id="reset">
+            Reset Week
+          </button>
+
+          <button class="btn" id="save">
+            Save Progress
+          </button>
+
+          <button class="btn" id="load">
+            Load Saved Week
+          </button>
+
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- =========================
+         CALENDAR
+         ========================= -->
+
+    <section class="panel calendar-wrap">
+
+      <div class="calendar" id="calendar">
+      </div>
+
+    </section>
+
+    <!-- =========================
+         ACTIVITY LIBRARY
+         ========================= -->
+
+    <aside class="panel sidebar">
+
+      <h2>
+        Activity Library
+      </h2>
+
+      <div class="hint">
+        Expand a category and drag an activity into a free start time. Used-up activities disappear automatically and return when an assignment is removed.
+      </div>
+
+      <div id="library">
+      </div>
+
+    </aside>
+
+  </main>
+
+
+  <!-- ==========================================================
+       FOOTER
+       ========================================================== -->
+
+  <footer>
+
+    <div class="footer">
+
+      <strong>
+        Build your Consulting Week
+      </strong>
+
+      <br/>
+
+      Interactive consulting simulation for workshop and onboarding purposes. Based on the internal BMC “Typical Consulting Week” learning concept. Multiple valid solutions may exist.
+
+      <br/>
+
+      <strong>
+        Privacy & data:
+      </strong>
+
+      All planning data remains in the user’s local browser. No information is transmitted, uploaded, or centrally stored by this tool.
+
+      <br/>
+
+      Final Clean Version · Developed by Jakob Hilmer for Bosch internal training use
+
+    </div>
+
+  </footer>
+
+
+  <!-- ==========================================================
+       SCORE MODAL
+       ========================================================== -->
+
+  <div class="modal" id="scoreModal">
+
+    <div class="box">
+
+      <button class="close" data-close="scoreModal">
+        ×
+      </button>
+
+      <h2>
+        Consulting Week Health Score
+      </h2>
+
+      <div class="score" id="score">
+      </div>
+
+      <div id="metrics">
+      </div>
+
+      <h3>
+        Recommendations
+      </h3>
+
+      <ul id="feedback">
+      </ul>
+
+    </div>
+
+  </div>
+
+
+  <!-- ==========================================================
+       TOAST NOTIFICATION
+       ========================================================== -->
+
+  <div class="toast" id="toast">
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
